@@ -1,0 +1,81 @@
+<header class="jumbotron" style="padding: 2%; border-radius: 0;">
+  <h2 class="text-center">{{ language.login.title }}</h2>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6"></div>
+    <div class="col-lg-4 col-md-6">
+      <div class="form-group">
+        <label> {{ language.login.username.label }} </label>
+        <input
+          type="text"
+          name="userName"
+          placeholder="{{ language.login.username.placeholder }}"
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <label> {{ language.login.password.label }} </label>
+        <input
+          type="password"
+          name="passWord"
+          placeholder="{{ language.login.password.placeholder }}"
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-success">
+          {{ language.buttons.signIn }}
+        </button>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <a href="#" class="" style="float: left;">
+            {{ language.login.register }}
+          </a>
+        </label>
+        <br />
+        <label>
+          <a href="#" class="" style="float: right;">
+            {{ language.login.forgot }}
+          </a>
+        </label>
+        <br />
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="useLanguage('English')"
+          >
+            {{ language.buttons.en }}
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="useLanguage('Tamil')"
+          >
+            {{ language.buttons.ta }}
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="useLanguage('French')"
+          >
+            {{ language.buttons.fr }}
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="useLanguage('Chinese')"
+          >
+            {{ language.buttons.zh }}
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6"></div>
+  </div>
+</div>
